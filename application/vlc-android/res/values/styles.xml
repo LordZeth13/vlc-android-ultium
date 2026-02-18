@@ -15,11 +15,12 @@
     <!-- VLC ULTIUM
         Added customized text size for navigation menu items -->
     <style name="UltiumNavRailText" parent="@style/TextAppearance.MaterialComponents.Caption">
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/navigation_rail_text_size</item>
     </style>
 
     <style name="UltiumNavRailText.Active" parent="@style/UltiumNavRailText">
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/navigation_rail_text_size</item>
     </style>
 
     <style name="Theme.VLC.Apearance" parent="Theme.MaterialComponents.Light.NoActionBar">
@@ -351,6 +352,7 @@
     <style name="Theme.VLC.Onboarding.7" parent="Theme.VLC.Black">
         <item name="background_default">@color/onboarding_grey</item>
         <item name="colorControlNormal">@color/white</item>
+        <item name="background_actionbar">@color/onboarding_grey</item>
     </style>
 
     <style name="Theme.VLC.TV" parent="Theme.Leanback">
@@ -808,7 +810,7 @@
     <style name="Theme.VLC.HorizontalListTitle">
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textColor">?attr/colorAccent</item>
-        <item name="android:textSize">18sp</item>
+        <item name="android:textSize">@dimen/title_list_title_text_size</item>
     </style>
 
     <style name="ToolbarTitleText" parent="@style/TextAppearance.MaterialComponents.Headline6">

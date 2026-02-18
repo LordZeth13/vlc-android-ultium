@@ -11,6 +11,7 @@
 
     <!-- Rail Items -->
     <dimen name="navigation_rail_menu_width">-2</dimen>
+    <dimen name="navigation_rail_text_size">18sp</dimen>
 
     <!-- Media Buttons -->
     <dimen name="media_button_width">-2</dimen>
@@ -145,6 +146,7 @@
 
     <dimen name="tv_card_padding">16dp</dimen>
     <dimen name="navigation_margin">0dp</dimen>
+    <dimen name="toolbar_margin">0dp</dimen>
 
     <dimen name="audio_cover">48dp</dimen>
     <dimen name="video_cover">100dp</dimen>
@@ -186,4 +188,17 @@
     <dimen name="onboarding_control_button_height">-2</dimen>
     <dimen name="onboarding_control_button_width">-2</dimen>
     <dimen name="onboarding_control_button_text_size">12sp</dimen>
+
+    <!-- Card Browser Item -->
+    <dimen name="three_states_checkbox_size">-2</dimen>
+    <dimen name="card_browser_item_icon_height">64dp</dimen>
+    <dimen name="card_browser_item_icon_width">64dp</dimen>
+    <dimen name="card_browser_item_visualizer_size">32dp</dimen>
+    <dimen name="card_browser_item_title_text_size">14sp</dimen>
+    <dimen name="card_browser_item_desc_text_size">12sp</dimen>
+    <dimen name="card_browser_more_icon_size">-2</dimen>
+
+    <!-- Title List -->
+    <dimen name="title_list_title_text_size">18sp</dimen>
+
 </resources>

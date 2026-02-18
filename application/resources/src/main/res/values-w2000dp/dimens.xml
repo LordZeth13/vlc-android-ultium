@@ -7,14 +7,16 @@
     <dimen name="toolbar_icon_width">64dp</dimen>
 
     <!-- Rail Items -->
-    <dimen name="navigation_rail_menu_width">120dp</dimen>
+    <dimen name="navigation_rail_menu_width">250dp</dimen>
+    <dimen name="navigation_rail_text_size">32sp</dimen>
 
     <!-- Media Buttons -->
     <dimen name="media_button_width">130dp</dimen>
     <dimen name="media_button_height">130dp</dimen>
 
     <!-- General Layout -->
-    <dimen name="layout_starting_margin">80dp</dimen>
+    <dimen name="layout_starting_margin">250dp</dimen>
+    <dimen name="toolbar_margin">180dp</dimen>
 
     <!-- Category Tab Labels -->
     <dimen name="tab_text_size">36sp</dimen>
@@ -73,4 +75,17 @@
     <dimen name="onboarding_control_button_height">100dp</dimen>
     <dimen name="onboarding_control_button_width">180dp</dimen>
     <dimen name="onboarding_control_button_text_size">32sp</dimen>
+
+    <!-- Card Browser Item -->
+    <dimen name="three_states_checkbox_size">28dp</dimen>
+    <dimen name="card_browser_item_icon_height">128dp</dimen>
+    <dimen name="card_browser_item_icon_width">190dp</dimen>
+    <dimen name="card_browser_item_visualizer_size">64dp</dimen>
+    <dimen name="card_browser_item_title_text_size">28sp</dimen>
+    <dimen name="card_browser_item_desc_text_size">24sp</dimen>
+    <dimen name="card_browser_more_icon_size">38dp</dimen>
+
+    <!-- Title List -->
+    <dimen name="title_list_title_text_size">32sp</dimen>
+
 </resources>
