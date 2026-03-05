@@ -615,7 +615,7 @@ class VideoPlayerOverlayDelegate (private val player: VideoPlayerActivity) {
                     RendererDelegate.renderers.observe(player) { updateRendererVisibility() }
                 }
 
-                hudBinding.btnNavigateUp.setOnClickListener {
+                hudBinding.btnNavigateUp?.setOnClickListener {
                     player.onBackPressedDispatcher.onBackPressed()
                 }
 
