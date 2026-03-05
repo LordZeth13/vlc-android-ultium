@@ -113,6 +113,7 @@ import org.videolan.vlc.viewmodels.PlaylistModel
 import java.text.DateFormat
 import java.util.Calendar
 import java.util.Locale
+import androidx.activity.OnBackPressedDispatcherOwner
 
 
 class VideoPlayerOverlayDelegate (private val player: VideoPlayerActivity) {
@@ -612,6 +613,10 @@ class VideoPlayerOverlayDelegate (private val player: VideoPlayerActivity) {
                         && player.settings.getBoolean(KEY_ENABLE_CASTING, true)) {
                     PlaybackService.renderer.observe(player) { rendererItem -> hudRightBinding.videoRenderer.setImageDrawable(AppCompatResources.getDrawable(player, if (rendererItem == null) R.drawable.ic_player_renderer else R.drawable.ic_player_renderer_on)) }
                     RendererDelegate.renderers.observe(player) { updateRendererVisibility() }
+                }
+
+                hudBinding.btnNavigateUp?.setOnClickListener {
+                    player.onBackPressedDispatcher.onBackPressed()
                 }
 
                 setTitle(service.currentMediaWrapper?.title)
