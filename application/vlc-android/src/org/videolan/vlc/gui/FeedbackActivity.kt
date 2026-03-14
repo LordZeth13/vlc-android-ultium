@@ -160,8 +160,10 @@ class FeedbackActivity : BaseActivity(), DebugLogService.Client.Callback {
         binding = DataBindingUtil.setContentView(this, R.layout.about_feedback_activity)
         val toolbar = findViewById<MaterialToolbar>(R.id.main_toolbar)
         setSupportActionBar(toolbar)
+
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+
         title = getString(R.string.send_feedback)
 
         if (AndroidDevices.isTv) {

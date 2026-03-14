@@ -72,6 +72,7 @@ class PreferencesActivity : BaseActivity() {
 
         setContentView(R.layout.preferences_activity)
         setSupportActionBar(findViewById<View>(R.id.main_toolbar) as Toolbar)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back_large_navigation)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                     .replace(R.id.fragment_placeholder, PreferencesFragment().apply { if (intent.hasExtra(EXTRA_PREF_END_POINT)) arguments = bundleOf(EXTRA_PREF_END_POINT to intent.parcelable(EXTRA_PREF_END_POINT)) })
@@ -82,7 +83,8 @@ class PreferencesActivity : BaseActivity() {
     }
 
     override fun onStop() {
-        refreshAllWidgets()
+        //ZM: Causes a crash in GM Ultium head unit
+        //refreshAllWidgets()
         super.onStop()
     }
 
@@ -120,13 +122,6 @@ class PreferencesActivity : BaseActivity() {
             }
         }
 
-    }
-
-    fun exitAndRescan() {
-        setRestart()
-        val intent = intent
-        finish()
-        startActivity(intent)
     }
 
     fun setRestart() {

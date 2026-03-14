@@ -176,7 +176,10 @@ open class HeaderMediaListActivity : AudioPlayerContainerActivity(), IEventsHand
         initAudioPlayerContainerActivity()
         fragmentContainer = binding.songs
         originalBottomPadding = fragmentContainer.paddingBottom
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back_large_navigation)
+
         supportActionBar?.title = ""
         binding.topmargin = 86.dp
         toolbar.addOnLayoutChangeListener { v, left, top, right, bottom, oldLeft, oldTop, oldRight, oldBottom ->

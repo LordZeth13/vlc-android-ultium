@@ -40,7 +40,7 @@
             android:layout_height="120dp"
             android:contentDescription="@string/lb_navigation_menu_contentDescription"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/ic_arrow_back_large"
+            android:src="@drawable/ic_arrow_back_large_video"
             android:importantForAccessibility="yes"
             vlc:layout_constraintStart_toStartOf="parent"
             vlc:layout_constraintTop_toTopOf="parent"/>

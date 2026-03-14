@@ -82,8 +82,10 @@ class EqualizerSettingsActivity : BaseActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.equalizer_settings_activity)
         val toolbar = findViewById<MaterialToolbar>(R.id.main_toolbar)
         setSupportActionBar(toolbar)
+
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+
         title = getString(R.string.equalizer)
 
         binding.equalizers.layoutManager = LinearLayoutManager(this)
@@ -142,7 +144,8 @@ class EqualizerSettingsActivity : BaseActivity() {
             else
                 binding.overwrite.text = getString(R.string.overwrite)
         }
-        if (AndroidDevices.isTv) applyOverscanMargin(this)
+        //ZM: Causes a crash on GM Ultium head unit
+//        if (AndroidDevices.isTv) applyOverscanMargin(this)
 
     }
 
