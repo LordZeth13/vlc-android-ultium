@@ -103,7 +103,9 @@ class InfoActivity : AudioPlayerContainerActivity(), View.OnClickListener, PathA
         binding = DataBindingUtil.setContentView(this, R.layout.info_activity)
 
         initAudioPlayerContainerActivity()
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_arrow_back_large_navigation)
 
         val item = if (savedInstanceState != null)
             savedInstanceState.parcelable<Parcelable>(TAG_ITEM) as MediaLibraryItem?

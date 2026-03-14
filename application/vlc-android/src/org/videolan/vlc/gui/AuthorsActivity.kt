@@ -36,8 +36,10 @@ class AuthorsActivity : BaseActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.about_authors_activity)
         val toolbar = findViewById<MaterialToolbar>(R.id.main_toolbar)
         setSupportActionBar(toolbar)
+
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+
         title = getString(R.string.authors)
 
         binding.authorsList.layoutManager = LinearLayoutManager(this)

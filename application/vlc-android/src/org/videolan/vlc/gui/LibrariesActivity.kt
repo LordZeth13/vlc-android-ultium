@@ -46,8 +46,10 @@ class LibrariesActivity : BaseActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.license_activity)
         val toolbar = findViewById<MaterialToolbar>(R.id.main_toolbar)
         setSupportActionBar(toolbar)
+
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+
         title = getString(R.string.libraries)
 
         binding.licenses.layoutManager = LinearLayoutManager(this)
