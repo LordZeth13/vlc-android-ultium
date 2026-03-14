@@ -83,7 +83,8 @@ class PreferencesActivity : BaseActivity() {
     }
 
     override fun onStop() {
-        refreshAllWidgets()
+        //ZM: Causes a crash in GM Ultium head unit
+        //refreshAllWidgets()
         super.onStop()
     }
 

@@ -26,6 +26,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ListView
 import androidx.core.content.getSystemService
 import androidx.fragment.app.FragmentActivity
@@ -46,6 +47,7 @@ class DebugLogActivity : FragmentActivity(), DebugLogService.Client.Callback {
     private lateinit var copyButton: Button
     private lateinit var clearButton: Button
     private lateinit var saveButton: Button
+    private lateinit var backButton: ImageButton
     private lateinit var logView: ListView
     private var logList: MutableList<String> = ArrayList()
     private lateinit var logAdapter: ArrayAdapter<String>
@@ -97,6 +99,7 @@ class DebugLogActivity : FragmentActivity(), DebugLogService.Client.Callback {
         copyButton = findViewById(R.id.copy_to_clipboard)
         clearButton = findViewById(R.id.clear_log)
         saveButton = findViewById(R.id.save_to_file)
+        backButton = findViewById(R.id.btn_navigate_up)
 
         client = DebugLogService.Client(this, this)
 
@@ -110,6 +113,10 @@ class DebugLogActivity : FragmentActivity(), DebugLogService.Client.Callback {
         saveButton.setOnClickListener(saveClickListener)
 
         copyButton.setOnClickListener(copyClickListener)
+
+        backButton.setOnClickListener {
+            onBackPressedDispatcher.onBackPressed()
+        }
     }
 
     override fun onDestroy() {

@@ -226,7 +226,8 @@ class DebugLogService : Service(), Logcat.Callback, Runnable {
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
-        if (AndroidUtil.isOOrLater) forceForeground()
+        //ZM: Causes a crash in GM Ultium head unit
+        //if (AndroidUtil.isOOrLater) forceForeground()
         return START_STICKY
     }
 

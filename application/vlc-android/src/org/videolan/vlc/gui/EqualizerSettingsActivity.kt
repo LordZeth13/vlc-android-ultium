@@ -144,7 +144,8 @@ class EqualizerSettingsActivity : BaseActivity() {
             else
                 binding.overwrite.text = getString(R.string.overwrite)
         }
-        if (AndroidDevices.isTv) applyOverscanMargin(this)
+        //ZM: Causes a crash on GM Ultium head unit
+//        if (AndroidDevices.isTv) applyOverscanMargin(this)
 
     }
 
