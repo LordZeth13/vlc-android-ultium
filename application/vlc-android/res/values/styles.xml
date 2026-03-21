@@ -736,22 +736,31 @@
         <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment.Material</item>
         <item name="preferenceCategoryStyle">@style/VLCPreferenceCategoryStyle</item>
         <item name="preferenceScreenStyle">@style/VLCPreferenceScreenStyle</item>
+        <item name="seekBarPreferenceStyle">@style/VLCSeekBarPreferenceStyle</item>
     </style>
 
     <style name="VLCEditPreferenceStyle" parent="Preference.DialogPreference.EditTextPreference.Material">
         <item name="iconSpaceReserved">false</item>
+        <item name="android:layout">@layout/vlc_preference_layout</item>
+    </style>
+
+    <style name="VLCSeekBarPreferenceStyle" parent="Preference.SeekBarPreference.Material">
+            <item name="android:layout">@layout/vlc_seekbar_preference_layout</item>
     </style>
 
     <style name="VLCSwitchPreferenceStyle" parent="Preference.SwitchPreferenceCompat.Material">
         <item name="iconSpaceReserved">false</item>
+        <item name="android:layout">@layout/vlc_preference_layout</item>
     </style>
 
     <style name="VLCDialogPreferenceStyle" parent="Preference.DialogPreference.Material">
         <item name="iconSpaceReserved">false</item>
+        <item name="android:layout">@layout/vlc_preference_layout</item>
     </style>
 
     <style name="VLCCheckBoxPreferenceStyle" parent="Preference.CheckBoxPreference.Material">
         <item name="iconSpaceReserved">false</item>
+        <item name="android:layout">@layout/vlc_preference_layout</item>
     </style>
 
     <style name="VLCPreferenceFragmentStyle" parent="PreferenceFragment.Material">
@@ -760,14 +769,17 @@
 
     <style name="VLCPreferenceScreenStyle" parent="Preference.PreferenceScreen.Material">
         <item name="iconSpaceReserved">false</item>
+        <item name="android:layout">@layout/vlc_preference_layout</item>
     </style>
 
     <style name="VLCPreferenceStyle" parent="Preference.Material">
         <item name="iconSpaceReserved">false</item>
+        <item name="android:layout">@layout/vlc_preference_layout</item>
     </style>
 
     <style name="VLCPreferenceCategoryStyle" parent="Preference.Category.Material">
         <item name="iconSpaceReserved">false</item>
+        <item name="android:layout">@layout/vlc_preferences_category_layout</item>
     </style>
 
     <!-- Tips Apearance-->
