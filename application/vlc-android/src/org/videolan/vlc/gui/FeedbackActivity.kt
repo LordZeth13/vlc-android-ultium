@@ -162,7 +162,7 @@ class FeedbackActivity : BaseActivity(), DebugLogService.Client.Callback {
         setSupportActionBar(toolbar)
 
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_playlist_delete_large)
 
         title = getString(R.string.send_feedback)
 

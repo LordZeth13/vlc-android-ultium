@@ -17,7 +17,7 @@
 
     <!-- General Layout -->
     <dimen name="layout_starting_margin">250dp</dimen>
-    <dimen name="toolbar_margin">180dp</dimen>
+    <dimen name="scan_text_size">18sp</dimen>
 
     <!-- Category Tab Labels -->
     <dimen name="tab_text_size">36sp</dimen>
@@ -38,6 +38,7 @@
     <dimen name="audio_item_title_size">34sp</dimen>
     <dimen name="audio_item_description_size">28sp</dimen>
     <dimen name="audio_cover">96dp</dimen>
+    <dimen name="audio_player_song_list_margin">300dp</dimen>
 
     <!-- Audio Media Switch Items -->
     <dimen name="audio_media_sw_item_cover_size">96dp</dimen>
@@ -76,6 +77,7 @@
     <dimen name="onboarding_control_button_height">100dp</dimen>
     <dimen name="onboarding_control_button_width">180dp</dimen>
     <dimen name="onboarding_control_button_text_size">32sp</dimen>
+    <dimen name="view_empty_loading_end_margin">300dp</dimen>
 
     <!-- Card Browser Item -->
     <dimen name="three_states_checkbox_size">28dp</dimen>
@@ -100,4 +102,9 @@
     <dimen name="pref_title_text_size">28sp</dimen>
     <dimen name="pref_summary_text_size">24sp</dimen>
     <dimen name="equalizer_item_title_text_size">24sp</dimen>
+    <dimen name="preference_search_activity_layout_margin">150dp</dimen>
+
+    <!-- Tips -->
+    <dimen name="help_title_text_size">48sp</dimen>
+    <dimen name="help_title_description_size">32sp</dimen>
 </resources>

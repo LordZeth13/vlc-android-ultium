@@ -114,13 +114,13 @@
 
         <CheckBoxPreference
                 app:singleLineTitle="false"
-                android:defaultValue="true"
+                android:defaultValue="false"
                 android:key="audio_resume_card"
                 android:title="@string/audio_resume_card_title"
                 android:summary="@string/audio_resume_card_summary"/>
         <CheckBoxPreference
             app:singleLineTitle="false"
-            android:defaultValue="false"
+            android:defaultValue="true"
             android:key="playlist_mode_audio"
             android:summary="@string/force_play_all_audio_summary"
             android:title="@string/force_play_all_audio_title"/>

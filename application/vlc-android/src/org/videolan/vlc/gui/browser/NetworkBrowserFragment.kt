@@ -62,7 +62,7 @@ class NetworkBrowserFragment : BaseBrowserFragment(), IDialogManager {
         super.onCreate(savedInstanceState)
         dialogsDelegate.observeDialogs(this, this)
         networkMonitor = NetworkMonitor.getInstance(requireContext())
-        (requireActivity() as? SecondaryActivity)?.supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+        (requireActivity() as? SecondaryActivity)?.supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_playlist_delete_large)
         viewModel = getBrowserModel(TYPE_NETWORK, mrl)
     }
 

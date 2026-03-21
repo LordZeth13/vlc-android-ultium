@@ -66,6 +66,7 @@ import org.videolan.vlc.util.IDialogManager
 import org.videolan.vlc.util.launchWhenStarted
 import org.videolan.vlc.viewmodels.HistoryModel
 import org.videolan.vlc.viewmodels.StreamsModel
+import org.videolan.vlc.reloadLibrary
 
 private const val TAG = "VLC/HistoryFragment"
 private const val KEY_SELECTION = "key_selection"
@@ -78,6 +79,7 @@ class MoreFragment : BaseFragment(), IRefreshable, IHistory, IDialogManager,
     private lateinit var streamsEntry: TitleListView
     private lateinit var settingsButton: Button
     private lateinit var aboutButton: Button
+    private lateinit var scanButton: Button
     private lateinit var donationsButton: CardView
     private lateinit var viewModel: HistoryModel
     private lateinit var streamsViewModel: StreamsModel
@@ -108,6 +110,7 @@ class MoreFragment : BaseFragment(), IRefreshable, IHistory, IDialogManager,
         historyEntry = view.findViewById(R.id.history_entry)
         settingsButton = view.findViewById(R.id.settingsButton)
         aboutButton = view.findViewById(R.id.aboutButton)
+        scanButton = view.findViewById(R.id.scanButton)
         donationsButton = view.findViewById(R.id.donationsButton)
         if (!Settings.getInstance(requireActivity()).getBoolean(PLAYBACK_HISTORY, true)) historyEntry.setGone()
         viewModel.dataset.observe(viewLifecycleOwner) { list ->
@@ -169,6 +172,11 @@ class MoreFragment : BaseFragment(), IRefreshable, IHistory, IDialogManager,
             i.putExtra("fragment", SecondaryActivity.ABOUT)
             requireActivity().startActivityForResult(i, SecondaryActivity.ACTIVITY_RESULT_SECONDARY)
         }
+
+        scanButton.setOnClickListener {
+            requireActivity().applicationContext.reloadLibrary();
+        }
+
 //        VLCBilling.getInstance(requireActivity().application).addStatusListener {
 //            manageDonationVisibility()
 //        }

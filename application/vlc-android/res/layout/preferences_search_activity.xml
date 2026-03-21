@@ -35,7 +35,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/preference_search_activity_layout_margin">
 
         <ImageView
                 android:id="@+id/close_button"
@@ -47,7 +48,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/searchText"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/searchText"
-                app:srcCompat="@drawable/ic_close_up" />
+                app:srcCompat="@drawable/ic_playlist_delete_large" />
 
         <EditText
                 android:id="@+id/searchText"
