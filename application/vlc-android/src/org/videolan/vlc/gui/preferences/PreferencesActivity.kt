@@ -48,7 +48,7 @@ import org.videolan.vlc.gui.PinCodeReason
 import org.videolan.vlc.gui.preferences.search.PreferenceItem
 import org.videolan.vlc.gui.preferences.search.PreferenceParser
 import org.videolan.vlc.gui.preferences.search.PreferenceSearchActivity
-import org.videolan.vlc.widget.utils.refreshAllWidgets
+//import org.videolan.vlc.widget.utils.refreshAllWidgets
 
 const val EXTRA_PREF_END_POINT = "extra_pref_end_point"
 class PreferencesActivity : BaseActivity() {

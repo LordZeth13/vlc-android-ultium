@@ -65,7 +65,7 @@
                 android:text="@{equalizer.equalizerEntry.name}"
                 android:textColor="?attr/font_default"
                 app:equalizerNameColor="@{equalizer}"
-                android:textSize="16sp"
+                android:textSize="@dimen/equalizer_item_title_text_size"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/export"
                 app:layout_constraintStart_toEndOf="@+id/imageView22"
