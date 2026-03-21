@@ -130,7 +130,7 @@ class SecondaryActivity : ContentActivity(), IDialogManager {
                 .commit()
         }
         dialogsDelegate.observeDialogs(this, this)
-        if (intent.getBooleanExtra(KEY_ANIMATED, false)) supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+        if (intent.getBooleanExtra(KEY_ANIMATED, false)) supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_playlist_delete_large)
     }
 
     override fun fireDialog(dialog: Dialog) {

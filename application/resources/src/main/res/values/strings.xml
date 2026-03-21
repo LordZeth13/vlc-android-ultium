@@ -1048,6 +1048,8 @@
     <string name="empty_directory">Empty</string>
     <string name="no_track">No track</string>
 
+    <string name="media_scan">Scan for Media</string>
+
     <string name="swipe_unlock">Swipe to unlock</string>
     <string name="swipe_unlock_no_touch">Long press to unlock</string>
     <string name="sub_result_by_name">Results for %s</string>

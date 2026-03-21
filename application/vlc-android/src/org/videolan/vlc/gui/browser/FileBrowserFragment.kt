@@ -70,7 +70,7 @@ open class FileBrowserFragment : BaseBrowserFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        (requireActivity() as? SecondaryActivity)?.supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+        (requireActivity() as? SecondaryActivity)?.supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_playlist_delete_large)
     }
 
     override fun onStart() {

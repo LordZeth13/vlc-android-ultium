@@ -436,6 +436,7 @@
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:layout_marginBottom="16dp"
+                android:layout_marginEnd="300dp"
                 android:background="?attr/audio_list_background"
                 android:clipToPadding="false"
                 android:paddingBottom="@dimen/listview_bottom_padding"
@@ -706,7 +707,7 @@
                 android:importantForAccessibility="no"
                 android:text="@string/time_0"
                 android:textColor="?attr/font_default"
-                android:textSize="12sp"
+                style="@style/VLC.Player.TimeText"
                 app:layout_constraintBottom_toTopOf="@+id/timeline"
                 app:layout_constraintLeft_toLeftOf="@+id/timeline" />
 
@@ -740,7 +741,7 @@
                 android:elevation="4dp"
                 android:text="@string/time_0"
                 android:textColor="?attr/font_default"
-                android:textSize="12sp"
+                style="@style/VLC.Player.TimeText"
                 app:layout_constraintBottom_toTopOf="@+id/timeline"
                 app:layout_constraintRight_toRightOf="@+id/timeline" />
 

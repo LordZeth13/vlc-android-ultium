@@ -77,7 +77,7 @@ class RemoteAccessShareActivity : BaseActivity() {
         val toolbar = findViewById<MaterialToolbar>(R.id.main_toolbar)
         setSupportActionBar(toolbar)
         supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_close_up)
+        supportActionBar?.setHomeAsUpIndicator(R.drawable.ic_playlist_delete_large)
         title = getString(R.string.remote_access)
 
         val remoteAccessServer = RemoteAccessServer.getInstance(applicationContext)

@@ -20,6 +20,7 @@
 
     <!-- General Layout -->
     <dimen name="layout_starting_margin">0dp</dimen>
+    <dimen name="scan_text_size">12sp</dimen>
 
     <!-- Category Tab Labels -->
     <dimen name="tab_text_size">12sp</dimen>
@@ -144,10 +145,10 @@
     <dimen name="recycler_section_header_height">36dp</dimen>
     <dimen name="recycler_section_header_tv_height">56dp</dimen>
     <dimen name="recycler_section_header_spacing">12dp</dimen>
+    <dimen name="audio_player_song_list_margin">0dp</dimen>
 
     <dimen name="tv_card_padding">16dp</dimen>
     <dimen name="navigation_margin">0dp</dimen>
-    <dimen name="toolbar_margin">0dp</dimen>
 
     <dimen name="audio_cover">48dp</dimen>
     <dimen name="video_cover">100dp</dimen>
@@ -189,6 +190,7 @@
     <dimen name="onboarding_control_button_height">-2</dimen>
     <dimen name="onboarding_control_button_width">-2</dimen>
     <dimen name="onboarding_control_button_text_size">12sp</dimen>
+    <dimen name="view_empty_loading_end_margin">0dp</dimen>
 
     <!-- Card Browser Item -->
     <dimen name="three_states_checkbox_size">-2</dimen>
@@ -213,4 +215,9 @@
     <dimen name="pref_title_text_size">12sp</dimen>
     <dimen name="pref_summary_text_size">10sp</dimen>
     <dimen name="equalizer_item_title_text_size">16sp</dimen>
+    <dimen name="preference_search_activity_layout_margin">0dp</dimen>
+
+    <!-- Tips -->
+    <dimen name="help_title_text_size">24sp</dimen>
+    <dimen name="help_title_description_size">14sp</dimen>
 </resources>
