@@ -1,21 +1,20 @@
-# VLC for Android
+# VLC for GM Ultium Head Units
 
-This is the official **Android** port of [VLC](https://videolan.org/vlc/).
+This is an uofficial port of [VLC Player](https://videolan.org/vlc/) for the GM Ultium 17.7" head unit. The user interface has been optimized for the head unit screen, improving the user experience. It also resolves some crashes specific to the head unit.
 
-VLC on Android plays all the same files as the classical version of VLC, and features a media database
+VLC on the head unit plays all the same files as the classical version of VLC, and features a media database
 for Audio and Video files and stream.
 
-- [Project Structure](#project-structure)
-- [LibVLC](#libvlc)
-- [License](#license)
-- [Build](#build)
-  - [Build Application](#build-application)
-  - [Build LibVLC](#build-libvlc)
-- [Contribute](#contribute)
-  - [Pull requests](#pull-requests)
-  - [Translations](#translations)
-- [Issues and feature requests](#issues-and-feature-requests)
-- [Support](#support)
+## Installation Instructions
+
+- Download the APK from the Release page and copy it to a USB drive
+- Plug the USB drive into your vehicle and download AnExplorer from the head unit's Google Play store
+- AnExplorer. A popup will appear prompting you to grant it permission. Give it the permissions it asks for.
+- Your USB drive should be displayed in the AnExplorer page. Click on it. The application will prompt you for permission again.
+- Navigate to the directory on your drive with the APK.
+- Once you see your APK file, there should be an expand icon in the top right of the tile. Click on that.
+- This should create a sequence of popups that prompt you to confirm installing the app.
+- Once complete, VLC Player will be on your vehicle.
 
 ## Project Structure
 
@@ -66,85 +65,13 @@ Native libraries are published on bintray. So you can:
 
 ### Build Application
 
+To build the project, you will need:
+
+- [OpenJDK 21](https://www.openlogic.com/openjdk-downloads)
+- [Gradle 8.14.4](https://gradle.org/releases/)
+
 VLC-Android build relies on gradle build modes :
 
 - `Release` & `Debug` will get LibVLC and Medialibrary from Bintray, and build application source code only.
 - `SignedRelease` also, but it will allow you to sign application apk with a local keystore.
 - `Dev` will build build LibVLC, Medialibrary, and then build the application with these binaries. (via build scripts only)
-
-### Build LibVLC
-
-You will need a recent Linux distribution to build VLC.
-It should work with Windows 10, and macOS, but there is no official support for this.
-
-#### Setup
-
-Check our [AndroidCompile wiki page](https://wiki.videolan.org/AndroidCompile/), especially for build dependencies.
-
-Here are the essential points:
-
-On Debian/Ubuntu, install the required dependencies:
-```bash
-sudo apt install automake ant autopoint cmake build-essential libtool-bin \
-    patch pkg-config protobuf-compiler ragel subversion unzip git \
-    openjdk-8-jre openjdk-8-jdk flex python wget
-```
-
-Setup the build environment:
-Set `$ANDROID_SDK` to point to your Android SDK directory
-`export ANDROID_SDK=/path/to/android-sdk`
-
-Set `$ANDROID_NDK` to point to your Android NDK directory
-`export ANDROID_NDK=/path/to/android-ndk`
-
-Then, you are ready to build!
-
-#### Build
-
-`buildsystem/compile.sh -l -a <ABI>`
-
-ABI can be `arm`, `arm64`, `x86`, `x86_64` or `all` for a multi-abis build
-
-You can do a library release build with `-r` argument
-
-#### Medialibrary
-
-Build Medialibrary with `-ml` instead of `-l`
-
-## Contribute
-
-VLC is a libre and open source project, we welcome all contributions.
-
-Just respect our [Code of Conduct](https://wiki.videolan.org/CoC/), and if you want do contribute to the UI or add a new feature, please open an issue first so there can be a discussion about it.
-
-
-### Pull requests
-
-Pull requests must be proposed on our [gitlab server](https://code.videolan.org/videolan/vlc-android/).
-
-So you must create an account, fork vlc-android project, and propose your merge requests from it.
-
-**Except for translations**, see the section below.
-
-### Translations
-
-You can help improving translations too by joining the [transifex vlc project](https://app.transifex.com/yaron/vlc-trans/dashboard/)
-
-Translations merge requests are then generated from transifex work.
-
-## Issues and feature requests
-
-VLC for Android bugtracker is hosted on [VideoLAN gitlab](https://code.videolan.org/videolan/vlc-android/issues)  
-Please look for existing issues and provide as much useful details as you can (e.g. vlc app version, device and Android version).
-
-A template is provided, please use it!
-
-Issues without relevant information will be ignored, we cannot help in this case.
-
-## Support
-
-- For usage support, use the in-app feedback option in the `About` screen
-- Android mailing list: android@videolan.org
-- bugtracker: https://code.videolan.org/videolan/vlc-android/issues
-- IRC: *#videolan* channel on [libera](https://libera.chat/)
-- VideoLAN forum: https://forum.videolan.org/viewforum.php?f=35
